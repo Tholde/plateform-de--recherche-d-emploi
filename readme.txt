@@ -1,0 +1,9 @@
+/***********ADMIN LOGIN ******************/
+username : admin@mail.com
+password : admin1235
+/***********USER LOGIN ******************/
+email : rabe@gmail.com
+password : rabe12345
+/***********RH LOGIN ******************/
+email : rakoto@gmail.com
+password : rakoto12345

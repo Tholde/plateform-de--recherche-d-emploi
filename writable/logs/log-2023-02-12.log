@@ -1,0 +1,98 @@
+ERROR - 2023-02-12 21:04:27 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+CRITICAL - 2023-02-12 21:04:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+#0 C:\xampp\htdocs\cdi\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cdi\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cdi\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cdi\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cdi\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:04:56 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Views\edit-profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 66)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('edit-profile', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(124): view('edit-profile', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->profil('2')
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:05:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Views\edit-profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 66)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('edit-profile', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(124): view('edit-profile', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->profil('2')
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:05:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Views\edit-profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 66)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('edit-profile', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(124): view('edit-profile', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->profil('1')
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:06:30 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Views\edit-profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 66)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('edit-profile', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(124): view('edit-profile', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->profil('upload', 'default-user.pn...')
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:07:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Views\edit-profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 66)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('edit-profile', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(123): view('edit-profile', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->profil('upload', 'default-user.pn...')
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-12 21:11:04 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->singnin()
+#2 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-02-12 21:15:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->singnin()
+#2 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-02-12 21:17:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->singnin()
+#2 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

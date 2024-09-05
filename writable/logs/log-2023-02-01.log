@@ -1,0 +1,78 @@
+ERROR - 2023-02-01 05:57:07 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+CRITICAL - 2023-02-01 05:57:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+#0 C:\xampp\htdocs\cdi\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cdi\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cdi\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cdi\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cdi\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-01 06:10:10 --> Invalid file: /adm.php
+#0 C:\xampp\htdocs\cdi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/adm.php')
+#1 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('/adm', Array, true)
+#2 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(54): view('/adm', Array)
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->adminlogin()
+#4 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 06:11:04 --> Invalid file: /.php
+#0 C:\xampp\htdocs\cdi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(54): view('/', Array)
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->adminlogin()
+#4 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 06:11:24 --> Invalid file: /dashb.php
+#0 C:\xampp\htdocs\cdi\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashb.php')
+#1 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('/dashb', Array, true)
+#2 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(54): view('/dashb', Array)
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->adminlogin()
+#4 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 06:14:03 --> Undefined variable $contView
+#0 C:\xampp\htdocs\cdi\app\Views\index.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 227)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(54): view('index', Array)
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->adminlogin()
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-01 06:24:22 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\cdi\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\cdi\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(64): redirect('/dashb')
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->adminlogin()
+#4 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-01 07:09:16 --> Undefined variable $contView
+#0 C:\xampp\htdocs\cdi\app\Views\index.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 227)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Controllers\AdminController.php(298): view('index')
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\AdminController->contactUsAdd()
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

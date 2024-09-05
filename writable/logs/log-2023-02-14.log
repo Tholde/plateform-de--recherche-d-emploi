@@ -1,0 +1,54 @@
+ERROR - 2023-02-14 01:17:41 --> Error connecting to the database: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+CRITICAL - 2023-02-14 01:17:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+#0 C:\xampp\htdocs\cdi\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\cdi\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\cdi\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\cdi\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\cdi\app\Controllers\Home.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-14 01:19:16 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->singnin()
+#2 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#3 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-02-14 02:08:05 --> Undefined variable $user
+#0 C:\xampp\htdocs\cdi\app\Views\include\header.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('include/header', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Views\offersList.php(36): view('include/header')
+#5 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('offersList', Array, true)
+#8 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(177): view('offersList', Array)
+#9 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->offerView()
+#10 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#11 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-02-14 02:11:18 --> Undefined variable $user
+#0 C:\xampp\htdocs\cdi\app\Views\include\sidebar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('include/sidebar', Array, true)
+#4 C:\xampp\htdocs\cdi\app\Views\offersList.php(32): view('include/sidebar')
+#5 C:\xampp\htdocs\cdi\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\cdi\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\cdi\system\Common.php(1089): CodeIgniter\View\View->render('offersList', Array, true)
+#8 C:\xampp\htdocs\cdi\app\Controllers\UsersController.php(177): view('offersList', Array)
+#9 C:\xampp\htdocs\cdi\system\CodeIgniter.php(832): App\Controllers\UsersController->offerView()
+#10 C:\xampp\htdocs\cdi\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+#11 C:\xampp\htdocs\cdi\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\cdi\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\cdi\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
